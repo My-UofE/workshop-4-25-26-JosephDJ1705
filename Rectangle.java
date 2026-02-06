@@ -18,6 +18,19 @@ public class Rectangle {
     this.originY = oY;
   }
 
+  //second constructor
+  public Rectangle(double width, double height) {
+    this(width, height, 0, 0);
+  }
+
+  //third constructor
+  public Rectangle() {
+    this.width = 1;
+    this.height = 1;
+    this.originX = 0;
+    this.originY = 0;
+  }
+
   // method: move the rectangle
   public void move(double dx, double dy) {
 	   originX += dx;
